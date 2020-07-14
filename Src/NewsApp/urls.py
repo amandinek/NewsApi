@@ -1,7 +1,9 @@
 
 from django.urls import path
-from .views import Index
+from .views import Home,Index, AlNews
 
 urlpatterns = [
-    path("",Index, name="Index"),
+    path("",Home, name="Home"),
+    path("bbc/",Index, name="Index"),
+    path("aljasira/",AlNews,name="AlNews")
 ]
