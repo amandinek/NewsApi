@@ -1,0 +1,27 @@
+body{
+background-color:#E0FFFF;
+}
+.front{
+background-image:url(https://cdn.pixabay.com/photo/2015/02/15/09/33/news-636978_960_720.jpg);
+background-size:cover;
+width:100%;
+height:500px;
+}
+
+ nav {
+background-color:#ccff99;
+color: black;
+}
+
+.form{
+padding-top:250px;
+margin-left:500px;
+align-item:center;
+}
+.links{
+margin-top:50px;
+}
+.footer{
+margin-top:20px;
+background-color:#ccff99;
+}

@@ -2,32 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>IntergratedNews</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     {% load static %}
+    <link href="{% static 'styles/style.css'%}" rel="stylesheet" type="text/css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg" id="navbar">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <div class="mr-auto">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="home.html" >HOME <span class="sr-only">(current)</span></a>
+
+                  <li class="nav-item">
+                    <a href="#sect-3" class="nav-link" >ABOUT</a>
+                  </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sect-4" >JOIN</a>
+                </li>
+                  <li class="nav-item">
+                    <a href="#sect-5" class="nav-link" >CONTACTS</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+<div class="front">
  <div class="forms">
         <form class="form">
             <label>
-                <input id="fr" class="form-control" type="text"   (keyup.enter)="profileUser()">
+                <input id="fr" class="form-control" type="text" placeholder="search"  (keyup.enter)="profileUser()">
             </label>
         </form>
     </div>
+ </div>
 <div class="container-fluid">
-    <div class="all_images">
-        <div id="img1">
-            <a><img src="business.jpeg"></a>
+<!--    -->
+    <div class="links">
+    <div class="row">
+    <div class="col-md-4 align-self-start">
+      <div id="img1">
+          <h6>Business</h6>
+            <a href="{}"><img src="{% static 'media/business.jpeg' %}" height="300" width="300"></a>
 
         </div>
+    </div>
+    <div class="col-md-4 align-self-center">
+
         <div id="img2">
-            <img src="geo.jpg">
-        </div>
-        <div id="img3">
-            <img src="tech.jpg">
-        </div>
-        <div id="img4">
-            <img src="">
+            <h6>Technology</h6>
+            <img src="{% static 'media/tech.jpg' %}" height="300" width="300">
         </div>
     </div>
+    <div class="col-md-4 align-self-end">
+
+        <div id="img3">
+            <h6>Location</h6>
+            <img src="{% static 'media/geo.jpg' %}" height="300" width="300">
+        </div>
+    </div>
+    </div>
+        </div>
+<!--    -->
+
+</div>
+<div class="footer">
+<footer>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> Amandine</a>
+    </div>
+</footer>
 </div>
 
 </body>
