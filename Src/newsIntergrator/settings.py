@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'newsIntergrator.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'wuxsedzk',
+        'USER':'wuxsedzk',
+        'PASSWORD':'HMMcvpu7-6UvZE-fpTHSQcQ4Td0K2jKz',
+        'HOST':'balarama.db.elephantsql.com',
+        'PORT':'5432',
     }
 }
 

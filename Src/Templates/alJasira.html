@@ -17,7 +17,7 @@
               <div class="mr-auto">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="nav-link" href="home.html" >HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'Home' %}" >HOME <span class="sr-only">(current)</span></a>
 
                   <li class="nav-item">
                     <a href="#sect-3" class="nav-link" >BUSINESS</a>
@@ -36,12 +36,12 @@
           </nav>
 <div class="jumbotron" style="color:black">
     <h1 style="color:black">
-        News from Al-jasira
+        USA business news
     </h1>
 </div>
 <div class="container">
 
-{% for new, des, i ,au ,pub in mynews %}
+{% for new, des,cont, i ,au ,pub in mynews %}
 
               <h3>Title:</h3> {{ new }}
               {{ value|linebreaks }}
@@ -52,6 +52,8 @@
         <div class="col-md-6">
 
               <h4>description:</h4>{{ des }}
+              {{ value|linebreaks }}
+            <h4>Content:</h4><a href="{{ cont }}">{{ cont }}</a>
               {{ value|linebreaks }}
 
     <h4>Author:</h4>{{ au}}

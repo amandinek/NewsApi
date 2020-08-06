@@ -18,14 +18,14 @@
               <div class="mr-auto">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="nav-link" href="home.html" >HOME <span class="sr-only">(current)</span></a>
+                    <a href="{% url 'Home' %}" class="nav-link" >HOME <span class="sr-only">(current)</span></a>
 
                   <li class="nav-item">
-                    <a href="#sect-3" class="nav-link" >BUSINESS</a>
+                    <a href="{% url 'AlNews' %}" class="nav-link" >BUSINESS</a>
                   </li>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#sect-4" >TECHNOLOGY</a>
+                  <a href="{% url 'Index' %}" class="nav-link"  >TECHNOLOGY</a>
                 </li>
                   <li class="nav-item">
                     <a href="#sect-5" class="nav-link" >REGION</a>
@@ -51,7 +51,7 @@
     <div class="col-md-4 align-self-start">
       <div id="img1">
           <h6>Business</h6>
-            <a href="{% url 'Index' %}"><img src="{% static 'media/business.jpeg' %}" height="300" width="300"></a>
+            <a href="{% url 'AlNews' %}"><img src="{% static 'media/business.jpeg' %}" height="300" width="300"></a>
 
         </div>
     </div>
@@ -59,7 +59,7 @@
 
         <div id="img2">
             <h6>Technology</h6>
-            <a href="{% url 'AlNews' %}" ><img src="{% static 'media/tech.jpg' %}" height="300" width="300"></a>
+            <a href="{% url 'Index' %}" ><img src="{% static 'media/tech.jpg' %}" height="300" width="300"></a>
         </div>
     </div>
     <div class="col-md-4 align-self-end">
