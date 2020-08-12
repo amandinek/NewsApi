@@ -6,4 +6,5 @@ urlpatterns = [
     path("",Home, name="Home"),
     path("bbc/",Index, name="Index"),
     path("aljasira/",AlNews,name="AlNews")
+
 ]
